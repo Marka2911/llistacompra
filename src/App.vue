@@ -21,7 +21,7 @@ const elementValid = computed(() => {
 <template>
   <h1>Llista de la compra</h1>
   <ul>
-    <input type="text" placeholder="Que vols comprar" v-model="nou">
+    <input type="text" placeholder="Que vols comprar" v-gitmodel="nou">
     <button @:click="afegeixElement" :disabled="!elementValid">Afegeix</button>
     <li v-for="(producte, index) in llista">
       <button @:click="esborraElement(index)">🗑️</button>
